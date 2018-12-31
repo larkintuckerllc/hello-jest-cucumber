@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
+import Counter from './components/Counter';
 import logo from './logo.svg';
+import sum from './utils/sum';
+
+const z = sum(1, 2);
+// tslint:disable-next-line
+console.log(z);
 
 class App extends Component {
   public render() {
@@ -19,6 +25,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <Counter />
         </header>
       </div>
     );
