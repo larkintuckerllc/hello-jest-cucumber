@@ -12,10 +12,12 @@ defineFeature(feature, test => {
       const givenX = parseInt(givenXStr, 10);
       x = givenX;
     });
+
     when(/^add (.*)$/, (givenYStr: string) => {
       const givenY = parseInt(givenYStr, 10);
       z = sum(x, givenY);
     });
+
     then(/^the sum is (.*)$/, (givenSumStr: string) => {
       const givenSum = parseInt(givenSumStr, 10);
       expect(z).toBe(givenSum);

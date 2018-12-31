@@ -11,9 +11,11 @@ defineFeature(feature, test => {
     given('1', () => {
       x = 1;
     });
+
     when('add 2', () => {
       z = sum(x, 2);
     });
+
     then('the sum is 3', () => {
       expect(z).toBe(3);
     });
