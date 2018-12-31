@@ -9,7 +9,7 @@ it('showing 0 initially', () => {
   expect(divInstance.props.children).toBe('0');
 });
 
-it('clicking - increments', () => {
+it('clicking - decrements', () => {
   const testRenderer = TestRenderer.create(<Counter />);
   const testInstance = testRenderer.root;
   const buttonInstance = testInstance.findByProps({ children: '-' });
